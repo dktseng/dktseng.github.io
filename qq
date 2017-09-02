@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.center {
+    text-align: center;
+    border: 5px solid red;
+}
+</style>
+<div class="center">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/jquery-1.12.2.min.js"></script>
+	<script type="text/javascript" src="js/fdb-all.min.js"></script>
+	<title></title>
+</head>
+<body>
+<h1>最近十筆</h1>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>日期</th>
+      <th>項目</th>
+      <th>類別</th>
+      <th>金額</th>
+    </tr>
+  </thead>
+  <tbody id="accountingTable">
+   
+  </tbody>
+</table>
+<script type="text/javascript" src="db.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>ss

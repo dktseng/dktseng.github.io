@@ -2,22 +2,44 @@
 <html>
 <head>
 <style>
-.center {
+.form-group {
     text-align: center;
-    border: 5px solid blue;
+    border: 5px solid green;
 }
 </style>
-	<title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script type="text/javascript" src="js/jquery-1.12.2.min.js"></script>
+  <script type="text/javascript" src="js/fdb-all.min.js"></script>
+  <title></title>
 </head>
 <body>
-<form action="index.html">
-<div class="center">
-日期: <input _id=1 type="text" name="FirstName" value=""><br>
-類別: <input _id=2 type="text" name="LastName" value=""><br>
-金額: <input _id=3 type="text" name="LastName" value=""><br>
-<input type="submit" value="完成">
-	</div>
-</form>
-
+<h1>記帳頁面</h1>
+<div class="form-group">
+  <label for="date">日期:</label>
+  <input type="date" class="form-control" id="date">
+  <label for="category">類別:</label>
+  <select class="form-control" id="category">
+    <option val="">請選擇類別</option>
+    <option val="eat">吃的</option>
+    <option val="play">玩的</option>
+    <option val="thing">用的</option>
+    <option val="car">交通</option>
+    <option val="water">水費</option>
+    <option val="power">電費</option>
+    <option val="house">房租</option>
+    <option val="learn">學費</option>
+    <option val="game">線上遊戲</option>
+    <option val="other">其他</option>
+  </select>
+  <label for="item">項目:</label>
+  <input type="text" class="form-control" id="item">
+  <label for="cost">金額:</label>
+  <input type="text" class="form-control" id="cost">
+  <form action="index.html">
+  <button class="btn btn-primary" id="submit">送出</button>
+</div>
+<script type="text/javascript" src="db.js"></script>
 </body>
 </html>
