@@ -20,3 +20,8 @@ setTimeout(function(){
 	}
 
 }, 500);
+function changeColor(){
+var div=document.getElementByID("divID");
+div.style.background="#color"; //color自定自變
+}
+var timer=setInterval(changeColor,1);
