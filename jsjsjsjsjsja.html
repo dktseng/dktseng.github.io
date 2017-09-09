@@ -1,58 +1,93 @@
-
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html>
 <head>
-<style>
-.center {
-    text-align: center;
-    border: 5px solid green;
-}
-</style>
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<link href="css/bootstrap.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css.css">
-	<script type="text/javascript" src="js/jquery-1.12.2.min.js"></script>
-	<script type="text/javascript" src="js/fdb-all.min.js"></script>
-	<title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css.css">
+  <script type="text/javascript" src="js/jquery-1.12.2.min.js"></script>
+  <script type="text/javascript" src="js/fdb-all.min.js"></script>
+  <title></title>
 </head>
 <body>
 <h1>支出查詢</h1>
- <div class="center">
+
 <div class="radio">
-  <label><input type="radio" name="method" value="curMonth">這個月</label>
+  <label><input type="radio" name="method" value="curMonth">本月份</label>
 </div>
 <div class="radio">
   <label><input type="radio" name="method" value="time">選擇時間</label>
 </div>
-
 <input type="date" name="" id="fromTime"> - <input type="date" name="" id="toTime"><br>
-<button class="btn btn-primary little" id="lookup">搜詢</button>
+<button class="btn btn-primary little" id="lookup">查詢</button>
 <table class="table table-striped">
   <thead>
-  
     <tr>
       <th>類別</th>
       <th>金額</th>
       <th>比例</th>
     </tr>
-    <tr>
-    <th>吃東西</th>
-    <th>30</th>
-    <th>100%</th>
-    </tr>
-    <td></td>
-    
   </thead>
+  <tbody>
+    <tr>
+      <td>吃的</td>
+      <td id="eatCost">0</td>
+      <td id="eatProportion">0%</td>
+    </tr>
+    <tr>
+      <td>玩的</td>
+      <td id="playCost">0</td>
+      <td id="playProportion">0%</td>
+    </tr>
+    <tr>
+      <td>用的</td>
+      <td id="otherCost">0</td>
+      <td id="otherProportion">0%</td>
+    </tr>
+    <tr>
+      <td>交通</td>
+      <td id="carCost">0</td>
+      <td>0%</td>
+    </tr>
+
+  </tbody>    <tr>
+      <td>水費</td>
+      <td id="waterCost">0</td>
+      <td>0%
+      </tr>
+          <tr>
+      <td>電費</td>
+      <td id="powerCost">0</td>
+      <td>0%
+      </tr>
+          <tr>
+      <td>房租</td>
+      <td id="houseCost">0</td>
+      <td>0%
+      </tr>
+          <tr>
+      <td>線上遊戲</td>
+      <td id="gameCost">0</td>
+      <td>0%
+      </tr>
+          <tr>
+      <td>學費</td>
+      <td id="schoolCost">0</td>
+      <td>100%
+      </tr>
+          <tr>
+      <td>總計</td>
+      <td id="totalCost">0</td>
+      <td>100%
+      </tr>
+</table>
 <table class="table table-striped">
   <thead>
-  
     <tr>
       <th>日期</th>
       <th>項目</th>
       <th>類別</th>
       <th>金額</th>
     </tr>
-    
   </thead>
   <tbody id="accountingTable">
    
@@ -61,12 +96,3 @@
 <script type="text/javascript" src="js/lookup.js"></script>
 </body>
 </html>
-
-					
-
-
-
-
-
-
-

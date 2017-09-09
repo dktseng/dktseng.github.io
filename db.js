@@ -1,6 +1,6 @@
 var fdb = new ForerunnerDB();
 var db = fdb.db("accounting");
-var accountingCollection = db.collection('ggqqtat');
+var accountingCollection = db.collection('accounting');
 accountingCollection.load();
 
 function createAccountingHTMLString(date, category, item, cost){
